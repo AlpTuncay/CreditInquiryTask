@@ -1,0 +1,58 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+credit-inquiry-frontend/node_modules
+credit-inquiry-frontend/.pnp
+credit-inquiry-frontend/.pnp.js
+
+# testing
+credit-inquiry-frontend/coverage
+
+# production
+credit-inquiry-frontend/build
+
+# misc
+credit-inquiry-frontend/.DS_Store
+credit-inquiry-frontend/.env.local
+credit-inquiry-frontend/.env.development.local
+credit-inquiry-frontend/.env.test.local
+credit-inquiry-frontend/.env.production.local
+
+credit-inquiry-frontend/npm-debug.log*
+credit-inquiry-frontend/yarn-debug.log*
+credit-inquiry-frontend/yarn-error.log*
+
+creditinquiry/HELP.md
+creditinquirytarget/
+creditinquiry/!.mvn/wrapper/maven-wrapper.jar
+creditinquiry/!**/src/main/**/target/
+creditinquiry/!**/src/test/**/target/
+
+### STS ###
+creditinquiry/.apt_generated
+creditinquiry/.classpath
+creditinquiry/.factorypath
+creditinquiry/.project
+creditinquiry/.settings
+creditinquiry/.springBeans
+creditinquiry/.sts4-cache
+
+### IntelliJ IDEA ###
+creditinquiry/.idea
+creditinquiry/*.iws
+creditinquiry/*.iml
+creditinquiry/*.ipr
+
+### NetBeans ###
+creditinquiry/nbproject/private/
+creditinquiry/nbbuild/
+creditinquiry/dist/
+creditinquiry/nbdist/
+creditinquiry/.nb-gradle/
+creditinquiry/build/
+creditinquiry/!**/src/main/**/build/
+creditinquiry/!**/src/test/**/build/
+
+### VS Code ###
+creditinquiry/.vscode/
+

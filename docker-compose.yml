@@ -1,0 +1,41 @@
+version: "3.7"
+
+services:
+
+  inquiry-db:
+    build:
+      context: ./creditinquiry/db
+      dockerfile: Dockerfile
+    
+    ports:
+      - "5432:5432"
+    
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
+  inquiry-service:
+    build:
+      context: ./creditinquiry
+      dockerfile: Dockerfile
+    
+    ports:
+      - "8000:8000"
+    
+    depends_on:
+      - inquiry-db
+  
+  inquiry-app:
+    build:
+      context: ./credit-inquiry-frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./credit-inquiry-frontend:/usr/src/app"
+      # - "/usr/src/app/node_modules"
+    environment:
+      - NODE_ENV=development
+    depends_on:
+      - inquiry-service
+

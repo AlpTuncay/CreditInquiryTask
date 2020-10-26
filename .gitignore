@@ -25,7 +25,7 @@ credit-inquiry-frontend/yarn-error.log*
 creditinquiry/HELP.md
 creditinquirytarget/
 creditinquiry/!.mvn/wrapper/maven-wrapper.jar
-creditinquiry/!**/src/main/**/target/
+# creditinquiry/!**/src/main/**/target/
 creditinquiry/!**/src/test/**/target/
 
 ### STS ###
